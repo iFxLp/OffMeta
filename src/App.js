@@ -6,7 +6,8 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 
 import Login from "./components/login.component";
 import Registration from "./components/registration.component";
-import Landing from "./components/landing.component"
+
+import img from "./filler_picture.png"
 
 function App() {
   return (<Router>
@@ -26,13 +27,26 @@ function App() {
           </div>
         </div>
       </nav>
-
-  
+     
           <Switch>
+           
             <Route path="/login" component={Login} />
             <Route path="/registration" component={Registration} />
           </Switch>
 
+          <section id="main">
+          <div className="main-text">
+            <span>Esports is better with friends</span> 
+            <div className="p-text">
+            <p>
+              OffMeta is a fantasy esports league and chat all in one platform
+              Have fun and enjoy esports with your closest friends
+            </p>
+            </div>
+          </div>
+
+          <img src={img} width="520" alt="leaf-main-image" />
+        </section>
     </div></Router>
   );
 }
