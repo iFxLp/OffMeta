@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
-          <Link className="navbar-brand" to={"/landing"} style={{color: '#fff'}}>OffMeta</Link>
+          <Link className="navbar-brand" to={"/"} style={{color: '#fff'}}>OffMeta</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
@@ -27,15 +27,12 @@ function App() {
         </div>
       </nav>
 
-      <div className="auth-wrapper">
-        <div className="auth-inner">
+  
           <Switch>
-            <Route exact path='/' component={Landing} />
             <Route path="/login" component={Login} />
             <Route path="/registration" component={Registration} />
           </Switch>
-        </div>
-      </div>
+
     </div></Router>
   );
 }

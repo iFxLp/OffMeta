@@ -24,8 +24,6 @@ body, html, .App, #root, .auth-wrapper {
 
 .navbar-light {
   background-color: #142434;
-  color: #ffffff;
-
 }
 
 .auth-wrapper {
@@ -72,4 +70,3 @@ body, html, .App, #root, .auth-wrapper {
 .forgot-password a {
   color: #167bff;
 }
-
