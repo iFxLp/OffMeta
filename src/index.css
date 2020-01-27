@@ -28,6 +28,12 @@ body, html, .App, #root, .auth-wrapper {
 
 }
 
+.navbar-brand{
+  color: white;
+  text-align: left;
+  
+}
+
 .auth-wrapper {
   display: flex;
   justify-content: center;
