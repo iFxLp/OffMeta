@@ -9,7 +9,7 @@ export default class  extends Component {
                 <form>
                     <div className="get-started">
                     <input type="email" className="email-get-started" placeholder="Email"/>
-                    <button type="submit" className="btn-get-started">GET STARTED</button>
+                    <button type="submit" className="btn-get-started">Get Started</button>
                     </div>
                 </form>
             </div>

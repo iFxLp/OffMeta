@@ -110,9 +110,9 @@ header ul li {
 }
 
 .email-get-started{
-  border:2px solid #4CE2A7;
+  border:1px solid #4CE2A7;
   width: 450px;
-  height: 60.30px;  
+  height: 45px;  
   border-radius: 30px;
   background-color: #1B2136;
   color: #273E64;
@@ -123,12 +123,12 @@ header ul li {
 
 .btn-get-started{
   background-image: linear-gradient(to right, #43DEC2 0%, #23D1E2 51%, #0BC7FB 100%);
-  border: none;
+  border:1px solid #4CE2A7;
   color: #022047;
   width: 150px;
-  height: 60px;
+  height: 45px;
   border-radius: 30px;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: bold;
   margin-left: -150px;
 }
