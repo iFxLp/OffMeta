@@ -96,27 +96,39 @@ header ul li {
   margin: 0 20px;
 }
 
-#main {
-  margin: 0 120px;
-  margin-top: 200px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.landing{
+  margin: auto;
+  padding-top: 180px;
+  text-align:inline;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
 }
 
-#main .main-text {
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.5;
-  align-items: center;
+.get-started{
+  padding-top: 25px;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-span {
-  border-bottom: 2px solid #3ff1aa;
+.email-get-started{
+  border:2px solid #4CE2A7;
+  width: 450px;
+  height: 60.30px;  
+  border-radius: 30px;
+  background-color: #1B2136;
+  color: #273E64;
+  font-size: 20px;
+  padding-left: 15px;
+  display: inline-block;
 }
 
-.p-text{
-  font-size: medium;
-  color: white;
-  text-align: center;
-  align-items: center;
+.btn-get-started{
+  background-image: linear-gradient(to right, #43DEC2 0%, #23D1E2 51%, #0BC7FB 100%);
+  border: none;
+  color: #022047;
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -150px;
 }
