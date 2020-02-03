@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 import Landing from "./components/landing.component";
 import Login from "./components/login.component";
 import Registration from "./components/registration.component";
+import HomePage from "./components/homepage.component";
 
 function App() {
   return (<Router>
@@ -30,6 +31,7 @@ function App() {
             <Route path="/landing" component={Landing} />
             <Route path="/login" component={Login} />
             <Route path="/registration" component={Registration} />
+            <Route path="/home" component={HomePage} />
           </Switch>
     </div></Router>
   );
