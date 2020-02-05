@@ -7,6 +7,7 @@ import Landing from "./components/landing.component";
 import Login from "./components/login.component";
 import Registration from "./components/registration.component";
 import HomePage from "./components/homepage.component";
+import ForgotPassword from './components/forgotpassword.component';
 
 function App() {
   return (<Router>
@@ -31,6 +32,7 @@ function App() {
             <Route path="/landing" component={Landing} />
             <Route path="/login" component={Login} />
             <Route path="/registration" component={Registration} />
+            <Route path="/forgotpassword" component={ForgotPassword}/>
             <Route path="/home" component={HomePage} />
           </Switch>
     </div></Router>

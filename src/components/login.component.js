@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 export default class  extends Component {
     render() {
@@ -27,7 +28,7 @@ export default class  extends Component {
 
                         <button type="submit" className="btn btn-primary btn-block">Login</button>
                         <p className="forgot-password text-right">
-                            <a href="#">Forgot password?</a>
+                            <a href="/forgotpassword">Forgot password?</a>
                         </p>
                         </form>
                 </div>

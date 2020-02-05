@@ -237,3 +237,11 @@ Side Bar Navigation CSS
   color: #23D1DB;
   text-decoration: none;
 }
+
+/*
+Forgot Password CSS
+*/
+
+.forgot{
+  padding-top: 200px;
+}
