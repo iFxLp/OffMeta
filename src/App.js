@@ -8,6 +8,7 @@ import Login from "./components/login.component";
 import Registration from "./components/registration.component";
 import HomePage from "./components/homepage.component";
 import ForgotPassword from './components/forgotpassword.component';
+import Profile from './components/profile.component';
 
 function App() {
   return (<Router>
@@ -34,6 +35,7 @@ function App() {
             <Route path="/registration" component={Registration} />
             <Route path="/forgotpassword" component={ForgotPassword}/>
             <Route path="/home" component={HomePage} />
+            <Route path="/profile" component={Profile} />
           </Switch>
     </div></Router>
   );

@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 
 
-export default class HomePage extends Component{
+export default class Profile extends Component{
     render(){
         return(
             <div className ="homePage">
@@ -24,14 +24,6 @@ export default class HomePage extends Component{
                             <li><Link className="more" to={"/more"}>...More</Link></li>
                         </div>
                     </ul>
-                </div>
-                
-                <div className="main-content">
-
-                </div>
-
-                <div className="side-chat">
-
                 </div>
             </div>
         );

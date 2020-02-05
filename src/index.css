@@ -143,8 +143,29 @@ Side Bar Navigation CSS
   margin-left: 14%;
   margin-right: 14%;
 }
+
+.main-content{
+  background-color: black;
+  padding-top: 100px;
+  display: inline-block; 
+  width: 58%;
+  margin-top: 55px;
+  border-radius: 15px;
+}
+
+.side-chat{
+  background-color: red;
+  float: right; 
+  width: 30%; 
+  border-radius: 15px;
+  margin-top: 55px;
+}
+
 .sideBar{
   padding-top: 100px;
+  float: left; 
+  width: 12%;
+  background-color: blueviolet;
 }
 
 .sideBar-list{
