@@ -7,7 +7,7 @@ export default class HomePage extends Component{
         return(
             <div className ="homePage">
                 <div className="sideBar">
-                    <ul>
+                    <ul className="sideBar-list">
                         <div className="firstSide">
                              <li><Link className="home" to={"/home"}>Home</Link></li>
                         </div>
