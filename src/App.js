@@ -3,39 +3,34 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
-
+import Landing from "./components/landing.component";
 import Login from "./components/login.component";
 import Registration from "./components/registration.component";
-import Landing from "./components/landing.component"
 
 function App() {
   return (<Router>
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
-          <Link className="TopLeft" to={"/landing"}>OffMeta</Link>
+          <Link className="navbar-brand" to={"/landing"} style={{color: '#fff'}}>OffMeta</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link className="TopRight" to={"/login"}>Login</Link>
+                <Link className="nav-link" to={"/login"} style={{color: '#fff'}}>Login</Link>
               </li>
               <li className="nav-item">
-                <Link className="TopRight" to={"/registration"}>Sign up</Link>
+                <Link className="nav-link" to={"/registration"} style={{color: '#fff'}}>Sign up</Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <div className="auth-wrapper">
-        <div className="auth-inner">
+     
           <Switch>
-            <Route exact path='/' component={Landing} />
+            <Route path="/landing" component={Landing} />
             <Route path="/login" component={Login} />
             <Route path="/registration" component={Registration} />
           </Switch>
-        </div>
-      </div>
     </div></Router>
   );
 }

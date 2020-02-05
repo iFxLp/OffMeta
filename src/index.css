@@ -24,8 +24,6 @@ body, html, .App, #root, .auth-wrapper {
 
 .navbar-light {
   background-color: #142434;
-  color: #ffffff;
-
 }
 
 .navbar-brand{
@@ -79,3 +77,64 @@ body, html, .App, #root, .auth-wrapper {
   color: #167bff;
 }
 
+.wrapper{
+  background-color: red;
+  color: white;
+}
+
+section {
+  margin: 0 120px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+
+header div {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.landing{
+  margin: auto;
+  padding-top: 180px;
+  text-align:inline;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+
+.get-started{
+  padding-top: 25px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.email-get-started{
+  border:1px solid #4CE2A7;
+  width: 450px;
+  height: 45px;  
+  border-radius: 30px;
+  background-color: #1B2136;
+  color: #273E64;
+  font-size: 20px;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.btn-get-started{
+  background-image: linear-gradient(to right, #43DEC2 0%, #23D1E2 51%, #0BC7FB 100%);
+  border:1px solid #4CE2A7;
+  color: #022047;
+  width: 150px;
+  height: 45px;
+  border-radius: 30px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: -150px;
+}

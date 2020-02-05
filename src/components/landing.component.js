@@ -1,33 +1,21 @@
 import React, { Component } from "react";
-
-export default class  Landing extends Component {
+import {withRouter} from 'react-router-dom'
+export default class Landing extends Component {
+    onSubmit = () => {
+        this.props.history.push('/registration');
+    }
     render() {
         return (
-            <form>
-                <h3>Login</h3>
-
-                <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
-
-                <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-
-                <div className="form-group">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+            <div className="landing">
+                <h1>Start a fantasy league today</h1>
+                <h6 style={{color: '#819091'}}>Create a free fantasy esports league in just 60 seconds</h6>
+                <form onSubmit={this.onSubmit}>
+                    <div className="get-started">
+                    <input type="email" className="email-get-started" placeholder="Email"/>
+                    <button type="submit" className="btn-get-started">Get Started</button>
                     </div>
-                </div>
-
-                <button type="submit" className="btn btn-primary btn-block">Login</button>
-                <p className="forgot-password text-right">
-                     <a href="#">Forgot password?</a>
-                </p>
-            </form>
+                </form>
+            </div>
         );
     }
 }
