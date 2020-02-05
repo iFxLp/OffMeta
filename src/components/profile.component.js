@@ -25,8 +25,24 @@ export default class Profile extends Component{
                         </div>
                     </ul>
                 </div>
-            </div>
-        );
 
+            <div className="profile-wrapper">
+            <div className="profile-inner">
+                <form>
+                    <h3 className="profile-title">Profile</h3>
+                    <div className="profile-picture">
+
+                    </div>
+                    <div className="profile-control">
+                        <input type="email" className="profile-form1" placeholder="John Doe" />
+                        <input type="email" className="profile-form2" placeholder="jondoe@rushb.com" />
+                    </div>
+                    <button type="submit" className="save">Save</button>
+                    <button type="submit" className="logoff">Logoff</button>
+                    </form>
+            </div>
+        </div>
+        </div>
+        );
     }
 }

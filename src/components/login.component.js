@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 export default class  extends Component {
     render() {
         return (
@@ -28,7 +28,7 @@ export default class  extends Component {
 
                         <button type="submit" className="btn btn-primary btn-block">Login</button>
                         <p className="forgot-password text-right">
-                            <a href="/forgotpassword">Forgot password?</a>
+                            <Link to={"/forgotpassword"}>Forgot password?</Link>
                         </p>
                         </form>
                 </div>
