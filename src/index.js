@@ -35,24 +35,10 @@ var findDocuments = function(db, callback){
         callback;
     })
 }
-var addData = function(db,callback){
-    var data = findDocuments(db,function(){
-        db.data();
-    })
-}
+v
 MongoClient.connect(url, function(err,db) {
     console.log("Connected successfully to server");
    findDocuments(db,function(){
         db.close();
    })
 })
-const overwatch = require('overwatch-api');
- 
-const platform = 'pc';
-const region = 'us';
-const tag = 'Calvin-1337';
- 
-overwatch.getProfile(platform, region, tag, (err, json) => {
-  if (err) console.error(err);
-  else console.log(json);
-});
