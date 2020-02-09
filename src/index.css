@@ -332,8 +332,6 @@ Profile Page CSS
   padding-left: 10px;
 }
 
-
-
 .save{
   float: left;
   background-color: #1DA1F2;
@@ -366,6 +364,53 @@ Profile Page CSS
   margin-bottom: 25px;
   margin-left: 120px;
   border-color: #fff;
+}
+
+/*
+Create League CSS 
+*/
+.clContainer{
+  padding: 100px;
+}
+
+.clWrapper{
+    width: 850px;
+    height: 450px;
+    margin: auto;
+    background: #283245;
+    padding: 40px 55px 45px 55px;
+    border-radius: 15px;
+    transition: all .3s;
+    color: white;
+    text-align: left;
+}
+
+.btn-createLeague{
+  border-radius: 25px;
+  color: white;
+  background-color: #1DA1F2;
+  border: none;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  margin-left: 550px;
+  margin-top: 250px;
+}
+
+.btn-createLeague:hover{
+  background-color: #0d8bd9;
+}
+
+.leagueName{
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  border: solid red;
+  padding-top: 500px;
+}
+
+.teams{
+
 }
 
 

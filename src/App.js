@@ -9,6 +9,7 @@ import Registration from "./components/registration.component";
 import HomePage from "./components/homepage.component";
 import ForgotPassword from './components/forgotpassword.component';
 import Profile from './components/profile.component';
+import CreateLeague from './components/create-league.component';
 
 function App() {
   return (<Router>
@@ -36,6 +37,7 @@ function App() {
             <Route path="/forgotpassword" component={ForgotPassword}/>
             <Route path="/home" component={HomePage} />
             <Route path="/profile" component={Profile} />
+            <Route path ="/create" component={CreateLeague}/>
           </Switch>
     </div></Router>
   );

@@ -15,7 +15,7 @@ export default class Profile extends Component{
                             <li><Link className="inbox" to={"/inbox"}>Inbox</Link></li>
                         </div>
                         <div className="thirdSide">
-                            <li><Link className="league" to={"/league"}>League</Link></li>
+                            <li><Link className="league" to={"/create"}>League</Link></li>
                         </div>
                         <div className="fourthSide">
                             <li><Link className="profile" to={"/profile"}>Profile</Link></li>
