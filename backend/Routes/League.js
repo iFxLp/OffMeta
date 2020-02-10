@@ -43,8 +43,8 @@ router.route('/update/:id').post((req, res) =>{
     League.findById(req.params.id)
     .then(league =>{
         league.name = req.body.name;
-        league.Size = req.body.Size;
-        league.scoringFormat = Number(req.body.scoringFormat);
+        //league.Size = req.body.Size;
+        //league.scoringFormat = Number(req.body.scoringFormat);
 
         league.save()
         .then(() => res.json('league updated!'))
