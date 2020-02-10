@@ -27,16 +27,44 @@ export default class CreateLeague extends Component{
                 </div>
                 <div className="clContainer">
                     <div className="clWrapper">
-                        <p>Create a new league</p>
+                        <h3>Create a new league</h3>
                         <p>Don't worry you all be to make changes later to all settings later</p>
-                        <div classNameName="leagueName">
-                            <p>League Name</p>
+                        <div className="league-name">
+                            <label>League Name</label>
+                            <br></br>
+                            <input type="leaguename" className="league-name-text" placeholder="Enter the name of you league" />                        
                         </div>
                         <div className="teams">
-                            <p>League Size</p>
+                            <label>League Size</label>
+                            <div className="btn-group-teams">
+                            <button className="btn-group-teams-sel">4 Teams</button>
+                            <button className="btn-group-teams-sel">6 Teams</button>
+                            <button className="btn-group-teams-sel">8 Teams</button>
+                            <button className="btn-group-teams-sel">10 Teams</button>
+                            </div>
                         </div>
                         <div className="scoringFormat">
-                            <p>Scoring Format</p>
+                            <label>Scoring Format</label>
+                            <br></br>
+                            <input className="radio-scoring" type="radio" value="STD" name="scoring-format"/> STD
+                            <br></br>
+                            <input className="radio-scoring" type="radio" value="PPA" name="scoring-format"/> PPA
+                            <br></br>
+                            <input className="radio-scoring" type="radio" value="0.5 PPA" name="scoring-format"/> PPA
+                        </div>
+                        <div className="allow-draft-trade">
+                            <label>Allow Draft Picking Trading</label>
+                            <br></br>
+                            <label class="switch">
+                                <input type="checkbox"/>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div className="league-logo">
+                            <label>Optional Logo</label>
+                            <div className="logo-img">
+                                <button type="upload" className="btn-upload-img"></button>
+                            </div>
                         </div>
                         <button type="submit" className="btn-createLeague">Finish</button>
                     </div>
