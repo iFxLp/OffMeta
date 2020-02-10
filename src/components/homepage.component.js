@@ -27,7 +27,9 @@ export default class HomePage extends Component{
                 </div>
                 
                 <div className="main-content">
-
+                    <div className="tabs">
+                        
+                    </div>
                 </div>
 
                 <div className="side-chat">

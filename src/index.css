@@ -140,36 +140,35 @@ Side Bar Navigation CSS
 */
 
 .homePage{
-  margin-left: 14%;
-  margin-right: 14%;
+  margin-left: 27.1%;
+  margin-right: 28%;
 }
 
 .main-content{
-  background-color: #283245;
-  display: inline-block; 
-  width: 57%;
-  margin-top: 55px;
-  border-radius: 15px;
-  padding-left: 10px;
-  padding-top: 50%;
+  float:left;  
+  background:#273E64; 
+  width:60%; 
+  margin-top: 5%;
+  height:800px;
+  border-radius: 25px; 
+
 }
 
 .side-chat{
-  background-color: #283245;
-  float: right; 
-  width: 30%; 
-  border-radius: 15px;
-  margin-top: 55px;
-  padding-top: 50%;
-  padding-left: 10px;
-
+  float:right; 
+  background:white; 
+  width:25%; 
+  height:800px; 
+  padding-left: 5px;
+  border-radius: 25px;
+  margin-top: 5%;
 }
 
-.sideBar{
-  padding-top: 100px;
-  float: left; 
-  width: 12%;
-  background-color: #18202F;
+.sideBar{  
+  float:left;  
+  width:15%; 
+  height:280px; 
+  margin-top: 6%;
 }
 
 .sideBar-list{
