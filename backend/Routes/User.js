@@ -3,10 +3,11 @@ let User = require('../models/User.model');
 
 router.route('/').get((req,res)=>{
     User.find()
-    .then(User => res.json(User))
+    .then(user => res.json(user))
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/')
 router.route('/add').post((req,res) => {
     const username = req.body.username;
     const password = req.body.password;
@@ -26,27 +27,28 @@ router.route('/add').post((req,res) => {
 });
 
 router.route('/:id').get((req, res)=> {
-    Exercise.findById(req.params.id)
-    .then(User => res.json(User))
+    User.findById(req.params.id)
+    .then(user => res.json(user))
     .catch(err => res.status(400).json('Error: ' +err));
 });
 router.route('/:id').delete((req, res) => {
-    Exercise.findByIdAndDelete(req.params.id)
-    .then(() => res.json('Excersise deleted.'))
+    User.findByIdAndDelete(req.params.id)
+    .then((user) => res.json('User has been succesfully deleted.'))
     .catch(err => res.status(400).json('Error: ' +err));
 })
 
 router.route('/update/:id').post((req, res) =>{
     User.findById(req.params.id)
-   .then(User => {
-   User.username = req.body.username;
-   User.password = req.body.password;
-   User.ProfileImage = req.body.ProfileImage;
-    User.Date = Date.parse(req.body.Date);
-    User.firstname = req.body.firstname;
-    User.lastname = req.body.lastname;
+   .then(user => {
+   user.username = req.body.username;
+   user.password = req.body.password;
+   user.email = req.body.email;
+   //User.ProfileImage = req.body.ProfileImage;
+    //User.Date = Date.parse(req.body.Date);
+    //User.firstname = req.body.firstname;
+   // User.lastname = req.body.lastname;
 
-    User.save()
+    user.save()
     .then(() => res.json('User Updated'))
     .catch(err => res.status(400).json('Error: ' +err));
     })
