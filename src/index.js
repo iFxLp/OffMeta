@@ -18,27 +18,4 @@ ReactDOM.render(
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-var MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
-var ProfileSchema = new Profiler.Schema({
-    Username: String,
-    Password: String,
-    Gender: String,
-    DOB: String
-});
-var url ='mongodb://localhost:28017/Profile';
-var findDocuments = function(db, callback){
-  var collection = db.collection('Players');
 
-    collection.find().toArray(function(err,docs){
-        console.log(docs);
-        callback;
-    })
-}
-v
-MongoClient.connect(url, function(err,db) {
-    console.log("Connected successfully to server");
-   findDocuments(db,function(){
-        db.close();
-   })
-})

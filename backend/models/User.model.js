@@ -22,7 +22,7 @@ const userSchema = new Schema({
         minlenth: 3
     },
     Date:{
-        type: Date,
+       type: Date,
         required:true,
         trim: true,
         minlength: 3
