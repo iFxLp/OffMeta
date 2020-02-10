@@ -15,19 +15,25 @@ const userSchema = new Schema({
         trim:true,
         minlength:3
     },
-    ProfileImage:{
+    email:{
         type: String,
         required: true,
         trim:true,
         minlenth: 3
     },
+    /*ProfileImage:{
+        type: String,
+        required: true,
+        trim:true,
+        minlenth: 3
+    },*/
    /* Date:{
        type: Date,
         required:true,
         trim: true,
         minlength: 3
    },*/
-    firstname:{
+   /* firstname:{
         type: String,
         required: true,
         trim:true,
@@ -38,7 +44,7 @@ const userSchema = new Schema({
         required: true,
         trim:true,
         minlenth: 3
-    },
+    },*/
 },{
     timestamps: true,
 });

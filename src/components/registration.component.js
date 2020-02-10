@@ -29,8 +29,14 @@ export default class Registration extends Component {
 
         console.log(user);
 
-        axios.post('http://localhost:5000/users/add', user)
+        axios.post('http://localhost:5000/User/add', user)
             .then(res => console.log(res.data));
+
+        this.setState({ 
+            username: '',
+            email: '',
+            password: ''
+        })
     }
 
     onChangeUsername(e) {
