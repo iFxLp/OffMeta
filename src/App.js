@@ -3,10 +3,13 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
-
+import Landing from "./components/landing.component";
 import Login from "./components/login.component";
 import Registration from "./components/registration.component";
-import Landing from "./components/landing.component"
+import HomePage from "./components/homepage.component";
+import ForgotPassword from './components/forgotpassword.component';
+import Profile from './components/profile.component';
+import CreateLeague from './components/create-league.component';
 
 function App() {
   return (<Router>
@@ -26,16 +29,16 @@ function App() {
           </div>
         </div>
       </nav>
-
-      <div className="auth-wrapper">
-        <div className="auth-inner">
+     
           <Switch>
-            <Route exact path='/' component={Landing} />
+            <Route path="/landing" component={Landing} />
             <Route path="/login" component={Login} />
             <Route path="/registration" component={Registration} />
+            <Route path="/forgotpassword" component={ForgotPassword}/>
+            <Route path="/home" component={HomePage} />
+            <Route path="/profile" component={Profile} />
+            <Route path ="/create" component={CreateLeague}/>
           </Switch>
-        </div>
-      </div>
     </div></Router>
   );
 }
