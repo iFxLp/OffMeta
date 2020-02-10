@@ -146,13 +146,12 @@ Side Bar Navigation CSS
 
 .main-content{
   background-color: #283245;
-  padding-top: 100px;
   display: inline-block; 
   width: 57%;
   margin-top: 55px;
   border-radius: 15px;
   padding-left: 10px;
-  padding-top: 100%;
+  padding-top: 50%;
 }
 
 .side-chat{
@@ -161,7 +160,7 @@ Side Bar Navigation CSS
   width: 30%; 
   border-radius: 15px;
   margin-top: 55px;
-  padding-top: 100%;
+  padding-top: 50%;
   padding-left: 10px;
 
 }
