@@ -21,12 +21,12 @@ const userSchema = new Schema({
         trim:true,
         minlenth: 3
     },
-    Date:{
+   /* Date:{
        type: Date,
         required:true,
         trim: true,
         minlength: 3
-    },
+   },*/
     firstname:{
         type: String,
         required: true,

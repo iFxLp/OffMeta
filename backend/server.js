@@ -19,7 +19,7 @@ const connection = mongoose.connection;
 
  const userRouter = require('./Routes/User');
  const playerRouter= require('./Routes/Players');
- const leagueRouter=require('./Router/League');
+ const leagueRouter=require('./Routes/League');
 
  app.use('/User',userRouter );
  app.use('/Players',playerRouter );
