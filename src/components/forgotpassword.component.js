@@ -9,8 +9,8 @@ export default class ForgotPassword extends Component{
                 <form >
                     <h3>Forgot Password</h3>
                     <p style={{color:'#7f7d7d'}}>
-                        If you have forgotten your password, please enter your acconut's
-                        email address below and click the "Reset My Password" button. You will reaceive
+                        If you have forgotten your password, please enter your account's
+                        email address below and click the "Reset My Password" button. You will receive
                         an email that contains a link to set a new password.   
                     </p>
                     <div className="form-group">
