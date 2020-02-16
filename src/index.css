@@ -376,7 +376,7 @@ Profile Page CSS
   border-radius: 25px;
   color: #fff;
   height: 35px;
-  width: 100px;;
+  width: 100px;
 }
 
 .logoff{
@@ -386,11 +386,12 @@ Profile Page CSS
   border-radius: 25px;
   color: #fff;
   height: 35px;
-  width: 100px;;
+  width: 100px;
 }
 
 .profile-title{
-  padding-right: 220px;
+  float: left;
+  margin-left: -70%;
 }
 
 .profile-picture{
@@ -401,6 +402,32 @@ Profile Page CSS
   margin-bottom: 25px;
   margin-left: 120px;
   border-color: #fff;
+}
+.profile-inner-bar{
+  
+}
+
+.profile-inner-header{
+  display: inline-block;
+}
+
+.edit-profile{
+  float: right;
+}
+
+.btn-edit-profile{
+  background-color: #283245;
+  border: solid #1DA1F2 2px;
+  border-radius: 25px;
+  color: #fff;
+  height: 35px;
+  width: 100px;
+  
+}
+
+.btn-edit-profile:hover{
+  background-color: #1DA1F2;
+  border:none;
 }
 
 /*
